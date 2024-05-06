@@ -38,9 +38,9 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.0.6",
   "volta": {
     "node": "20.12.2",
-    "pnpm": "9.1.0"
+    "pnpm": "9.0.6"
   }
 }

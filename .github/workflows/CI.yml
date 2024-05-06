@@ -60,7 +60,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
 
       - name: Setup node
         uses: actions/setup-node@v4
@@ -97,14 +97,14 @@ jobs:
         if: ${{ matrix.settings.setup }}
         shell: bash
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
 
       - name: Setup node x86
         if: matrix.settings.target == 'i686-pc-windows-msvc'
         run: pnpm config set supportedArchitectures.cpu "ia32"
         shell: bash
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
 
       - name: Setup node x86
         uses: actions/setup-node@v4
@@ -160,7 +160,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
 
       - name: Setup node
         uses: actions/setup-node@v4
@@ -198,7 +198,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
 
       - name: Setup node
         uses: actions/setup-node@v4
@@ -236,7 +236,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
 
       - name: Setup node
         uses: actions/setup-node@v4
@@ -361,7 +361,7 @@ jobs:
   #   steps:
   #     - uses: actions/checkout@v4
   #
-  #     - uses: pnpm/action-setup@v2
+  #     - uses: pnpm/action-setup@v3
   #
   #     - name: Setup node
   #       uses: actions/setup-node@v4
