@@ -1,0 +1,19 @@
+{
+  "name": "@ahocorasick-rs/ahocorasick-rs-darwin-x64",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "ahocorasick-rs.darwin-x64.node",
+  "files": [
+    "ahocorasick-rs.darwin-x64.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
+
